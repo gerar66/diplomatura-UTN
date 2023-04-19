@@ -1,0 +1,16 @@
+.divPrincipal{
+    margin-left: 30px;
+    font-family: sans-serif;
+    /* width: 600px;
+    height: 300px;
+     */
+    box-shadow: 0 0 5px #888;
+    border-radius: 5px;
+    padding: 5%;
+}
+.containerDatos{
+    columns: 2;
+}
+.containerImg{
+    float: right;
+}
