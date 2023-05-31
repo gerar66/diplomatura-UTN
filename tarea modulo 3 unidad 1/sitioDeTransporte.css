@@ -1,0 +1,24 @@
+body {
+    background-color: #ffdd90;
+    background-image: url("14766-playa.jpg");
+    display: grid;
+    min-height: 100vh;
+    opacity: 75%;
+    width:100%;
+  }
+  .card-body{
+   /*  margin-top: auto;
+    align-items: flex-end; */
+  }
+  .card-header{
+    position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+    
+  }
+  .card-title1{
+   
+    background-image: url("img01.jpg");
+  }
