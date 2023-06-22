@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cuadros">
+        <p>Ejercicio 1</p>
+    <div class="cuadro rosado" onclick="cambiarColor('pink')"></div>
+    <div class="cuadro amarillo" onclick="cambiarColor('yelow')"></div>
+    <div class="cuadro naranja" onclick="cambiarColor('orange')"></div>
+    </div>
+    <div class="contadorDeCaracteres">
+        <p>Ejercicio 2</p>
+<textarea name="cuadrado" id="texto" ></textarea>
+<div> caracteres: <span id="contar"></span></div>
+
+<p>Tercer ejercicio ver en consola.</p>
+
+    </div>
+    <style>
+        .cuadrados{
+            display:grid;
+        }
+        .cuadro{
+            height: 150px;
+            width: 150px;
+        }
+        .rosado{
+            background-color: pink;
+        }
+        .amarillo{
+            background-color: yellow;
+        }
+        .naranja{
+            background-color: orange;
+        }
+    </style>
+    <script>
+        function cambiarColor(color) {
+            document.querySelector('body').style.background = color;
+        }
+
+        const texto = document.getElementById('texto');
+        const contar = document.getElementById('contar');
+        texto.addEventListener('keyup', function(){
+            contar.innerText = texto.value.length;
+        })
+
+        var alumnos = [
+
+  {
+
+    nombre: 'Juan Gomez',
+
+    nota: 7
+
+  }, {
+
+    nombre: 'Pedro Rodriguez',
+
+    nota: 4
+
+  }, {
+
+    nombre: 'Roxana García',
+
+    nota: 8
+
+  }, {
+
+    nombre: 'Luciano Lopez',
+
+    nota: 5
+
+  }, {
+
+    nombre: 'Fernanda Gimenez',
+
+    nota: 6
+
+  }, {
+
+    nombre: 'Florencia Martinez',
+
+    nota: 10
+
+  }, {
+
+    nombre: 'Raul Sanchez',
+
+    nota: 7
+
+  }, {
+
+    nombre: 'Sandra Figueroa',
+
+    nota: 8
+
+  }
+
+];
+const aprobados = alumnos.filter(function (alumno){
+    return alumno.nota >= 7;
+})
+console.log(aprobados)
+console.log(`${aprobados.length}`);
+
+for(let i=0; i<aprobados.length; i++){
+    document.write(`<p>Alumno: ${aprobados[i].nombre}, Nota:${aprobados[i].nota}</p>`)
+}
+    </script>
+</body>
+</html>
