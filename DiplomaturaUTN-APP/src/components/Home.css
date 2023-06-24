@@ -1,0 +1,48 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: red;
+    color: pink;
+    /* padding: 10px; */
+    text-align: center;
+    margin-bottom: 10%;
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 60;
+    background-color: #858080;
+    padding:20px ;
+   
+    
+    
+   
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 40px;
+  }
+  
+  footer {
+    background-color: #2b59f1;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
