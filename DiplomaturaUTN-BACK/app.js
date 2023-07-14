@@ -28,7 +28,7 @@ resave: false,
 saveUninitialized: true
 }));
 
-app.use('/', indexRouter);
+/* app.use('/', indexRouter); */
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter)
 
